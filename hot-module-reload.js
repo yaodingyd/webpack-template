@@ -10,6 +10,7 @@ module.exports = {
     filename: 'bundle.js',
     // A publicPath is required because HMR only works in the way that modified bundle is served from memory 
     // at the relative path specified in publicPath. It will not be written to your configured output directory. 
+    // in the index.html, it should be <script src='/assets/bundle.js'></script>
     publicPath: '/assets/'
   },
   watch: true,
