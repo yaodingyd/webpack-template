@@ -15,9 +15,9 @@ module.exports = {
   },
   watch: true,
   devServer: {
-    // inline mode is for auto reload
+    // inline is for Automatic Refresh. This can be used without HMR.
     inline: true,
-    // hot mode enables HMR without reload 
+    // hot mode enables HMR 
     hot: true,
     contentBase: "./",
     stats: { chunks: false }
@@ -29,5 +29,7 @@ module.exports = {
 
     new webpack.NamedModulesPlugin(),
     // prints more readable module names in the browser console on HMR updates
-  ]
+  ],
+  //HMR can only work with “loaders” that implement and understand HMR API.
+  //So there must be a loader module, for example, react-hot-loader
 }
