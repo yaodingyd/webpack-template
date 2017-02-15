@@ -15,8 +15,9 @@ module.exports = {
   },
   watch: true,
   devServer: {
-    // inline is for auto refresh
+    // inline mode is for auto reload
     inline: true,
+    // hot mode enables HMR without reload 
     hot: true,
     contentBase: "./",
     stats: { chunks: false }
